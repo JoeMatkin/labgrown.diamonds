@@ -13,7 +13,7 @@
   	</div>
   </div>
   <div class="img-container">
-    <img src="" />
+    <img class="img" src="{{ section.settings.image }}" />
   </div>
 </div>
 
@@ -23,11 +23,16 @@
 {% endjavascript %}
 
 {% schema %}
-  {
+    {
     "name": "Section name",
 	"class": "section",
 	"tag": "section",
     "settings": [
+	{
+	  "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-banner.settings.image.label"
+    },
 	{
       "type": "text",
       "id": "heading",
