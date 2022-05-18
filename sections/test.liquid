@@ -4,11 +4,13 @@
 {% endstylesheet %}
 <div class="page-width">
   <div>
-  {%- if section.settings.button_label != blank -%}
-    <h2>{{ section.settings.heading }}</h2>
-    <div>{{ section.settings.text }}</div>
-	<a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
-  {%- endif -%}
+    <div>
+  		{%- if section.settings.button_label != blank -%}
+    	<h2>{{ section.settings.heading }}</h2>
+    	<div>{{ section.settings.text }}</div>
+		<a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+  		{%- endif -%}
+  	</div>
   </div>
 </div>
 
