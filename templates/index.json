@@ -258,6 +258,7 @@
     "165290878077ad8c25": {
       "type": "test",
       "settings": {
+        "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
         "heading": "Heading",
         "text": "Brief paragraph",
         "button_label": "sdsdsd",
