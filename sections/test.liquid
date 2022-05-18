@@ -1,11 +1,15 @@
+{{ 'section-test.css' | asset_url | stylesheet_tag }}
+
 {% stylesheet %}
 {% endstylesheet %}
-
 <div>
+  <div>
   {%- if section.settings.button_label != blank -%}
 	<a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
   {%- endif -%}
+  </div>
 </div>
+
 
 
 {% javascript %}
