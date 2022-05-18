@@ -241,6 +241,8 @@
         "16529112020b4bb8d5-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "image_2": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -256,7 +258,9 @@
     "165290878077ad8c25": {
       "type": "test",
       "settings": {
-        "button_label": "Label",
+        "heading": "Heading",
+        "text": "Brief paragraph",
+        "button_label": "sdsdsd",
         "button_link": "shopify:\/\/collections\/frontpage"
       }
     }
