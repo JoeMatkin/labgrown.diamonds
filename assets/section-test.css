@@ -1,9 +1,12 @@
 .content_wrap {
-  position: relative;
   display: flex;
   align-items; center;
   justify-content: center;
+}
+
+.img-container {
+  position: relative;
   width: 100%
   height: 100%;
-  
+
 }
