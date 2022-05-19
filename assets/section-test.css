@@ -1,8 +1,12 @@
-.content_wrap {
-  position: absolute;
+.hello {
   display: flex;
   align-items; center;
   justify-content: center;
+  
+}
+
+.content_wrap {
+  position: absolute;
 
 
   z-index: 1;
