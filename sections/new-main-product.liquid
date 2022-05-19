@@ -4,6 +4,13 @@
 {% endstylesheet %}
 <div class="main-layout-flex">
 	<div class="main-layout_left">
+              <div class="product__title" {{ block.shopify_attributes }}>
+              <h1>{{ product.title | escape }}</h1>
+              <a href="{{ product.url }}" class="product__title">
+                <h2 class="h1">
+                  {{ product.title | escape }}
+                </h2>
+              </a>
       {% render 'product-media' %}
     </div>
   	<div class="main-layout_right">
