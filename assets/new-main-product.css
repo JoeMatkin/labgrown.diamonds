@@ -1,11 +1,14 @@
 .main-layout-flex {
+  background-color: yellow;
   width: 100%;
 }
 
 .main-layout_left {
+  background-color: red;
   min-width: 68%;
 }
 
 .main-layout_right {
+  background-color: blue;
   width: 100%;
 }
