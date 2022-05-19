@@ -264,6 +264,15 @@
         "button_label": "sdsdsd",
         "button_link": "shopify:\/\/collections\/frontpage"
       }
+    },
+    "165296130057a877eb": {
+      "type": "test",
+      "settings": {
+        "heading": "Heading",
+        "text": "Brief paragraph",
+        "button_label": "Button label",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -274,6 +283,7 @@
     "video",
     "multicolumn",
     "16529112028f2e6440",
-    "165290878077ad8c25"
+    "165290878077ad8c25",
+    "165296130057a877eb"
   ]
 }
