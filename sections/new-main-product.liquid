@@ -8,15 +8,22 @@
 
 {% schema %}
   {
-    "name": "Section name",
+	"name": "Section name",
 	"class": "product",
 	"tag": "div",
-    "settings": [
-
-	],
-
-	"blocks": [
-
-	]
-  }
+	"settings": [{
+	"type": "text",
+	"id": "title",
+	"label": "labell"
+	}],
+			"blocks": [{
+			"type": "image",
+			"name": "image block",
+			"settings": [{
+				"type": "image_picker",
+				"id": "image",
+				"label": "image"
+			}]
+		}]
+}
 {% endschema %}
