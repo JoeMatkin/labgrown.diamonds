@@ -1,0 +1,11 @@
+.main-layout-flex {
+  width: 100%;
+}
+
+.main-layout_left {
+  min-width: 68%;
+}
+
+.main-layout_right {
+  width: 100%;
+}
