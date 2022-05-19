@@ -1,6 +1,6 @@
 .hello {
   display: flex;
-  align-item: middle;
+  align-items: middle;
   justify-content: center;
   
 }
