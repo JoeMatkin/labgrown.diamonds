@@ -21,43 +21,54 @@
 {% endjavascript %}
 
 {% schema %}
-    {
-    "name": "Section name",
-	"class": "section",
-	"tag": "section",
-    "settings": [
-	{
-	  "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
-    },
-	{
-      "type": "text",
-      "id": "heading",
-      "default": "Heading",
-      "label": "t:sections.multicolumn.settings.button_label.label"
-    },
-	{
-      "type": "text",
-      "id": "text",
-      "default": "Brief paragraph",
-      "label": "t:sections.multicolumn.settings.button_label.label"
-    },
-	{
-      "type": "text",
-      "id": "button_label",
-      "default": "Button label",
-      "label": "t:sections.multicolumn.settings.button_label.label"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "t:sections.multicolumn.settings.button_link.label"
-    }
-	],
-	"presets": [{
-    "name": "Section name from presets",
-    "category": "Text"
-  }]
-  }
+ {
+ 	"name": "Section name",
+ 	"class": "section",
+ 	"tag": "section",
+ 	"settings": [{
+ 			"type": "image_picker",
+ 			"id": "image",
+ 			"label": "t:sections.image-banner.settings.image.label"
+ 		},
+ 		{
+ 			"type": "text",
+ 			"id": "heading",
+ 			"default": "Heading",
+ 			"label": "t:sections.multicolumn.settings.button_label.label"
+ 		},
+ 		{
+ 			"type": "text",
+ 			"id": "text",
+ 			"default": "Brief paragraph",
+ 			"label": "t:sections.multicolumn.settings.button_label.label"
+ 		},
+ 		{
+ 			"type": "text",
+ 			"id": "button_label",
+ 			"default": "Button label",
+ 			"label": "t:sections.multicolumn.settings.button_label.label"
+ 		},
+ 		{
+ 			"type": "url",
+ 			"id": "button_link",
+ 			"label": "t:sections.multicolumn.settings.button_link.label"
+ 		}
+ 	],
+ 	"blocks": [{
+ 			"type": "slide",
+ 			"name": "Slide",
+ 			"limit": 4,
+ 			"settings": [{
+ 				"id": "image",
+ 				"type": "image_picker",
+ 				"label": "Image"
+ 			}]
+ 		}
+
+ 	],
+ 	"presets": [{
+ 		"name": "Section name from presets",
+ 		"category": "Text"
+ 	}]
+ }
 {% endschema %}
