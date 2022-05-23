@@ -13,11 +13,16 @@
   <div class="img-container">
     <img class="img" src="{{ section.settings.image | image_url }}" />
   </div>
+  
   <div class="slider">
   {% for block in section.blocks %}
-    <img src="{{ block.settings.image | img_url: 'master' }}" alt="" />
+    {%- case block.type -%}
+    {%- when 'text' -%}
+    <h2>{{- block.settings.text -}}</h2>
+  {% endcase %}
   {% endfor %}
-</div>
+  </div>
+  
 </div>
 
 
@@ -60,13 +65,13 @@
  		}
  	],
  	"blocks": [{
- 			"type": "slide",
- 			"name": "Slide",
- 			"limit": 4,
+ 			"type": "text",
+ 			"name": "Heading",
+ 			"limit": 1,
  			"settings": [{
- 				"id": "image",
- 				"type": "image_picker",
- 				"label": "Image"
+ 				"id": "Heading",
+ 				"type": "text",
+ 				"label": "Heading"
  			}]
  		}
 
