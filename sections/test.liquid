@@ -18,7 +18,7 @@
   {% for block in section.blocks %}
     {%- case block.type -%}
     {%- when 'text' -%}
-    {%- case block.id -%}
+    {%- case block.settings.id -%}
     {%- when 'heading' -%}
     <h1>{{ block.settings.heading }}</h1>
   {% endcase %}
