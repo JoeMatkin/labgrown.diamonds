@@ -17,9 +17,11 @@
   <div class="slider">
   {% for block in section.blocks %}
     {%- case block.type -%}
-    {%- when 'heading' -%}
-    <h2>{{ block.settings.heading }}</h2>
     {%- when 'text' -%}
+    {%- case block.id -%}
+    {%- when 'heading' -%}
+    <h1>{{ block.settings.heading }}</h1>
+  {% endcase %}
   {% endcase %}
   {% endfor %}
   </div>
